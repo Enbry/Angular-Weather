@@ -1,0 +1,171 @@
+/* app css stylesheet */
+@font-face {
+  font-family: 'geosans';
+  src: url('assets/fonts/geosanslight-oblique-webfont.eot');
+  src: url('assets/fonts/geosanslight-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/geosanslight-oblique-webfont.woff2') format('woff2'),
+  url('assets/fonts/geosanslight-oblique-webfont.woff') format('woff'),
+  url('assets/fonts/geosanslight-oblique-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;;
+
+}
+@font-face {
+  font-family: 'geosans';
+  src: url('assets/fonts/geosanslight-webfont.eot');
+  src: url('assets/fonts/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/geosanslight-webfont.woff2') format('woff2'),
+  url('assets/fonts/geosanslight-webfont.woff') format('woff'),
+  url('assets/fonts/geosanslight-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lemonmilk';
+  src: url('assets/fonts/lemonmilk-webfont.eot');
+  src: url('assets/fonts/lemonmilk-webfont.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/lemonmilk-webfont.woff2') format('woff2'),
+  url('assets/fonts/lemonmilk-webfont.woff') format('woff'),
+  url('assets/fonts/lemonmilk-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('assets/fonts/caviardreams-webfont.eot');
+    src: url('assets/fonts/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('assets/fonts/caviardreams-webfont.woff') format('woff'),
+         url('assets/fonts/caviardreams-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('assets/fonts/caviardreams_italic-webfont.eot');
+    src: url('assets/fonts/caviardreams_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/caviardreams_italic-webfont.woff2') format('woff2'),
+         url('assets/fonts/caviardreams_italic-webfont.woff') format('woff'),
+         url('assets/fonts/caviardreams_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('assets/fonts/caviardreams_bold-webfont.eot');
+    src: url('assets/fonts/caviardreams_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/caviardreams_bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/caviardreams_bold-webfont.woff') format('woff'),
+         url('assets/fonts/caviardreams_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('assets/fonts/caviardreams_bolditalic-webfont.eot');
+    src: url('assets/fonts/caviardreams_bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/caviardreams_bolditalic-webfont.woff2') format('woff2'),
+         url('assets/fonts/caviardreams_bolditalic-webfont.woff') format('woff'),
+         url('assets/fonts/caviardreams_bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+body{
+  background-color: #443c3c;
+  position: relative!important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.menu{
+  overflow: visible;
+  height: 80px;
+  width: 100vw;
+  padding: 0 8px;
+  z-index: 8;
+  position: relative;
+  background-color: #000;
+}
+.menu .logo{
+  height: 100%;
+  padding: 8px;
+  float: left;
+}
+.menu .logo img{
+  height: 65px;
+}
+.menu ul{
+  position: absolute;
+  right: 16px;
+  bottom: 21px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-family: "Roboto";
+}
+.menu ul > li {
+  display: inline;
+  margin: 0 8px;
+}
+.menu ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+  font-family: 'geosans';
+}
+.menu ul > li > a:hover {
+  color: #FFD357;
+}
+.padding{
+  padding: 16px;
+}
+footer {
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+@media (min-width: 1200px){
+  .footer-social .social{
+    width: 21%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .footer-social .social{
+    width: 25%;
+  }
+  .footer-btm img{
+    width: 16vw;
+  }
+  .dash-details{
+    margin-bottom: 8%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .footer-social .social{
+    width: 40%;
+  }
+  .footer-btm img{
+    width: 20vw;
+  }
+}
+@media (max-width: 768px){
+  .footer-social .social{
+    width: 50%;
+  }
+  .footer-btm img{
+    width: 18vw;
+  }
+}
